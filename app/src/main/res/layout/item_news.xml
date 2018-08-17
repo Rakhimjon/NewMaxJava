@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="10dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_list_item">
+
+        <!-- News block -->
+        <RelativeLayout
+            android:id="@+id/relativeItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180sp">
+
+            <ImageView
+                android:id="@+id/ivNewsImage"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvNewsAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_transparent"
+                android:maxLines="1"
+                android:padding="@dimen/normal_padding"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:text="ABC News" />
+
+
+        </RelativeLayout>
+
+        <!-- News Title -->
+        <TextView
+            android:id="@+id/tvNewsItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeItemImage"
+            android:maxLines="10"
+            android:padding="@dimen/normal_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textview_size_normal"
+            tools:text="" />
+
+        <!-- Date - Time -->
+        <TextView
+            android:id="@+id/tvListItemDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNewsItemTitle"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:layout_marginLeft="@dimen/normal_padding"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textview_size_small"
+            tools:text="22/10/2018" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
